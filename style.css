@@ -61,10 +61,8 @@ border: none;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    color:  #FF42A5 ;
+
 }
 .logo .text span{
     color: #0B0223;
@@ -77,7 +75,7 @@ line-height: normal;
 .hero{
     display: flex;
     justify-content: space-between;
-    padding:20px 100px;
+    padding:0px 100px;
 }
 .text-hero li{
     list-style: none;
@@ -85,8 +83,14 @@ line-height: normal;
     align-items: center;
     gap: 2px;
 }
+/* background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
 .text-hero{
-    background-image: url(images/Vector\ 2.png);
+    background-image: url(/images/Vector\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 30px;
 }
 .btn-org{
    
@@ -164,7 +168,7 @@ padding: 10px 0px;
 }
 .sec-down{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 0px 100px;
 }
 .we-are{
@@ -213,11 +217,275 @@ font-weight: 700;
 line-height: 45px;
 }
 .right{
-    text-align: right;
+    display: flex; justify-content:end;
+}
+.funny{
+    padding: 120px 100px;
+}
+.funny-cad{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.funny h3{
+    color: #0B0223;
+text-align: right;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+}
+.funny h3 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.funny p{
+    color: #534C64;
+text-align: center;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+.hoverinner{
+    position: absolute;
+    top: 0px;
+    background-color: #00000099;
+    text-align: center;
+    width: 0%;
+    height: 0%;
+    visibility:hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.hoverinner img{
+    margin-top: 170px;
 }
 
 
+.card {
+    position: relative;
+   
+}
+.card:hover .hoverinner{
+height: 80%;
+width: 100%;
+opacity: 1;
+visibility: visible;
+}
+.play .maindiv{
+position: relative;
+}
+.play .maindiv .inner{
+    position: absolute;
+    top: 350px;
+    left: -150px;
 
+}
+.play{
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 100px;
+}
 
+.play .text h3{
+    color:  #F948B2;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
 
+.play .text h3 span{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
 
+}
+
+.play p{
+    color: #534C64;
+text-align: right;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+text-align: left;
+}
+
+.playgames{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 100px;
+    align-items: center;
+   
+}
+.playgames .inner{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.playgames .text h3{
+    font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; /* 125% */
+color:  #F948B2 ;
+}
+.playgames .text{
+    padding-left: 150px;
+}
+.playgames .text p{
+    color: #534C64;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+
+}
+.text h3 span{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+}
+.career{
+    display: flex;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    padding: 12px 10px;
+    padding-left: 60px;
+    
+}
+.career h3{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; /* 125% */
+}
+.career p{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+
+.anotext{
+display: flex;
+justify-content: space-between;
+color: #FFF;
+text-align: right;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 40px; /* 200% */
+text-align: right;
+}
+.anotext .left{
+    text-align: right;
+    color: #FFF;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 40px; /* 200% */
+}
+.anotext .right{
+    text-align: right;
+    color: #FFF;
+text-align: right;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 40px; /* 200% */
+}
+
+.careerbtn{
+    font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+color: #FF42A5;
+border-radius: 48px;
+background: #FFF;
+}
+sectionbutton{
+    padding: 120px 100px; 
+}
+.btn{
+    display: flex;
+    align-items: center;
+}
+.btn button{
+    border-radius: 50px;
+background: #FFF;
+}
+.btn button:hover{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+} 
+.sectionbutton{
+    display: flex;
+}
+.cntr{
+    text-align: center;
+}
+.cntnt{
+display: flex;
+list-style: none;
+gap: 50px;
+}
+.cntnt li{
+    color: #FFF;
+text-align: center;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.footer{
+    background: #0B0223;
+}
+  /* responsive */
+  /* for mobile */
+  @media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .lower-img{
+        flex-direction: column;
+    }
+    .sec-down{
+        display: flex;
+        justify-content: center;
+       
+    }
+  }
